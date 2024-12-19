@@ -52,6 +52,7 @@
     "eslint-plugin-react": "^7.37.2",
     "json-server": "^1.0.0-beta.3",
     "prettier": "^3.4.2",
+    "react-day-picker": "^9.4.4",
     "swiper": "^9"
   }
 }
