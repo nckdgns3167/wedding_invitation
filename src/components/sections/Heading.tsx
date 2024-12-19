@@ -1,5 +1,5 @@
 import React from 'react'
-import { parseISO, format, getDay } from 'date-fns'
+import { format, getDay, parseISO } from 'date-fns'
 import Section from '@shared/Section'
 import classNames from 'classnames/bind'
 import style from './Heading.module.scss'
