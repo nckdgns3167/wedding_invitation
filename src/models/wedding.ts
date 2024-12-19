@@ -18,7 +18,7 @@ export interface Location {
   name: string
   address: string
   link: string
-  waytocom: {
+  waytocome: {
     metro: string[]
     bus: string[]
   }
