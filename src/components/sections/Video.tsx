@@ -8,8 +8,8 @@ const cx = classNames.bind(style)
 const Video = () => {
   return (
     <Section className={cx('container')}>
-      <video autoPlay muted loop poster="/assets/poster.jpg">
-        <source src="/assets/medium.mp4" type="video/mp4"></source>
+      <video autoPlay muted loop poster="/assets/videos/poster.jpg">
+        <source src="/assets/videos/medium.mp4" type="video/mp4"></source>
       </video>
     </Section>
   )
