@@ -9,7 +9,11 @@ const Video = () => {
   return (
     <Section className={cx('container')}>
       <video autoPlay muted loop poster="/assets/videos/poster.jpg">
-        <source src="/assets/videos/medium.mp4" type="video/mp4"></source>
+        <source
+          src="/assets/videos/길이줄인영상-Medium.webm"
+          type="video/mp4"
+        />
+        <source src="/assets/videos/길이줄인영상-Medium.mp4" type="video/mp4" />
       </video>
     </Section>
   )
