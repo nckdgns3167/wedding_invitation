@@ -12,7 +12,7 @@ const FullScreenMessage = ({ type }: FullScreenMessageProps) => {
   return (
     <div className={cx('container')}>
       {type === 'loading' ? (
-        <Heart />
+        <Loading />
       ) : (
         <>
           <Error />
@@ -23,7 +23,7 @@ const FullScreenMessage = ({ type }: FullScreenMessageProps) => {
   )
 }
 
-const Heart = () => {
+const Loading = () => {
   return (
     <svg
       className={cx('ico-heart')}
