@@ -6,7 +6,7 @@ import style from './ImageGallery.module.scss'
 
 import ImageViewer from '../imageViewer/ImageViewer'
 
-import generateImageUrl from '@/utils/generateImageUrl'
+import generateImageUrl from '@utils/generateImageUrl'
 
 const cx = classNames.bind(style)
 

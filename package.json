@@ -55,6 +55,7 @@
     "prettier": "^3.4.2",
     "react-copy-to-clipboard": "^5.1.0",
     "react-day-picker": "^9.4.4",
+    "react-query": "^3.39.3",
     "swiper": "^9",
     "webpack-font-preload-plugin": "^1.5.0"
   }
