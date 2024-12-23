@@ -63,4 +63,4 @@ const Calendar = ({ date }: { date: string }) => {
   )
 }
 
-export default Calendar
+export default React.memo(Calendar)

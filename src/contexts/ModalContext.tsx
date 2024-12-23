@@ -1,7 +1,9 @@
 import React, {
   ComponentProps,
   createContext,
+  useCallback,
   useContext,
+  useMemo,
   useState,
 } from 'react'
 
@@ -30,12 +32,20 @@ export const ModalContext = ({ children }: { children: React.ReactNode }) => {
 
   const $portal_root = document.getElementById('root-portal')
 
-  const open = (options: ModalOptions) =>
-    setModalState({ ...options, open: true })
+  const open = useCallback(
+    (options: ModalOptions) => setModalState({ ...options, open: true }),
+    [],
+  )
 
-  const close = () => setModalState(defaultValues)
+  const close = useCallback(() => setModalState(defaultValues), [])
 
-  const value = { open, close }
+  const value = useMemo(
+    () => ({
+      open,
+      close,
+    }),
+    [close, open],
+  )
 
   return (
     <Context.Provider value={value}>

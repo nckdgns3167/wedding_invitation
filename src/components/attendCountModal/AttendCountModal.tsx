@@ -45,7 +45,7 @@ const AttendCountModal = ({ wedding }: { wedding: Wedding }) => {
         close()
       },
     })
-  }, []) // eslint-disable-line
+  }, [close, open])
 
   return null
 }
