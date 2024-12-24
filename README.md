@@ -1,4 +1,4 @@
-## 프로젝트 환경
+### 프로젝트 환경
 
 - **Boilerplate**: `CRA` + `Typescript`
 - **Rules**: `ESLint` + `Prettier`
