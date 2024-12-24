@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+## 프로젝트 환경
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Boilerplate**: `CRA` + `Typescript`
+- **Rules**: `ESLint` + `Prettier`
+- **Style**: `SCSS` + `classnames`, `Reset CSS`
+- **Package Manager**: `yarn`
+- **DB**: `Json Server`
+- **state**: `context api`, `react-query`,
+- **UI**: `swiper(캐러셀 구현)`, `react-day-picker(캘린더 구현)`, `IconFinder(svg)`
+- **Util**: `date-fns(날짜표현)`, `react-copy-to-clipboard(텍스트 복사)`
+- **활용 서비스**
+    - `KaKao API(지도, 공유)`
+    - `Cloudinary(클라우드 기반  CND 획득)`
+    - `Squoosh(이미지 압축)`
+    - `Transfonter(폰트 용량 최적화)`
 
-## Available Scripts
+### Experience
 
-In the project directory, you can run:
+1. yarn berry의 **Plug'n'Play (PnP) 방식으로 패키지 의존성 관리** - 무거운 node_modules 폴더 사라짐.
+1. createPortal을 이용한 Modal 구현
+1. react-query를 이용한 **선언적 데이터 비동기 fetching** 기법 사용
+    - Suspense와 ErrorBoundary를 같이 활용하여 개발하면 이곳저곳에 있던 로딩, 에러 처리를 한 곳에서 처리가 가능하다는 것을 확인. UI를 그리는 컴포넌트들로 부터 이러한 로직이 모두 외부로
+      빠지게 됨...
+    - useState, useEffect를 사용해 데이터를 불러오고 세팅해주던 코드가 사라졌고, 패칭 결과에 따라 어떤 UI를 보여줄지만 생각하면 됨.
+1. 폰트, 이미지, 비디오를 관리하는 법을 다양하게 확인하게 됨. 
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
